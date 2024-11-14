@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>   BIENVENIDOS   </h1>","<br>");
+        let nombre=prompt("Ingrese su nombre: ");
+        let edad= parseInt("Ingrese su edad: ");
+        let licencia=prompt("Tiene licencia? (s/n): ").toLowerCase()==="s";
+
+        let esMayorDeEdad=false;
+        let tieneLicencia=false;
+
+        if(edad>=18){
+            esMayorDeEdad=true;
+        }
+        if(licencia){
+            tieneLicencia=true;
+        }
+
+        document.write("<h2>RESULTADOS</h2>","<br>");
+
+        puedeConducir = esMayorDeEdad&&tieneLicencia;
+        console.log(`Señor@ ${nombre} Puede conducir `, puedeConducir);
+        document.write(`Señor@ ${nombre} Puede conducir `, puedeConducir,"<br>");
+
+        siPuedeConducir= esMayorDeEdad||tieneLicencia;
+        console.log("¿Puede conducir? ", siPuedeConducir);
+        document.write("¿Puede conducir", siPuedeConducir,"<br>");
+
+    </script>
+</body>
+</html>
