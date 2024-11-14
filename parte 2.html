@@ -21,8 +21,8 @@
         document.write(" Resta: ",resta,"<br>");
         console.log("Multiplicacion: ",mul);
         document.write("Multiplicacion: ",mul,"<br>");
-        console.log("Division: ",div);
-        document.write("Division: ",div,"<br>");
+        console.log("Division: ",div.toFixed(3));
+        document.write("Division: ",div.toFixed(3),"<br>");
 
         document.write("Operaciones Logicas","<br>");
         console.log(`${a} es mayor que ${b}:`,a>b);
@@ -30,7 +30,9 @@
         console.log(`${a} es menor que ${b}:`,a<b);
         document.write(`${a} es menor que ${b}:`,a<b,"<br>");
         console.log(`${a} es igual que ${b}:`,a===b);
-        document.write(`${a} es diferente que ${b}:`,a!=b,"<br>");
+        document.write(`${a} es igual que ${b}:`, a===b ,"<br>");
+        console.log(`${a} es igual que ${b}:`,a!=b);
+        document.write(`${a} es diferente que ${b}:`, a!=b ,"<br>");
 
 
    </script> 
